@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #666;
+    font-weight: 400;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+}
+
+.container {
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem;
+}
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.hero__content > .hero__title {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #333;
+}
+.hero__content > .hero__title .highlight {
+    color: #4caf50;
+}
+.hero__content > .hero__description {
+    font-size: 1.2rem;
+    color: #666;
+}
+.hero__content > .hero__search {
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+.hero__content > .hero__search .hero__input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+.hero__content > .hero__search .btn--primary {
+    padding: 0.75rem 1.5rem;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.hero__content > .hero__search .btn--primary:hover {
+    background-color: #45a049;
+}
+.hero__content > .hero__partnership-title {
+    font-size: 1rem;
+    color: #888;
+    font-weight: 600;
+}
+.hero__content > .hero__partnerships {
+    display: flex;
+    gap: 1rem;
+}
+.hero__content > .hero__partnerships img {
+    height: 30px;
+}
+.hero__image {
+    position: relative;
+}
+.hero__image img {
+    width: 100%;
+    border-radius: 8px;
+}
+.hero__image-stats {
+    position: absolute;
+    bottom: -2rem;
+    right: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 1rem;
+}
+.hero__image-stats .stat {
+    text-align: center;
+}
+.hero__image-stats .stat__value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+.hero__image-stats .stat__label {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/*# sourceMappingURL=styles.css.map */

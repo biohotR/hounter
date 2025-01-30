@@ -1,0 +1,14 @@
+.hero__partnership-title {
+    font-size: 1.3rem;
+    color: #888;
+    font-weight: 300;
+}
+
+.hero__partnerships {
+    display: flex;
+    gap: 1rem;
+
+    img {
+        height: 60px;
+    }
+}

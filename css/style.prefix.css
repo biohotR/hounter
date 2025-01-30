@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #666;
+  font-weight: 400;
+  line-height: 1.6;
+  background-color: #f7f7f7;
+}
+
+.container {
+  width: 90%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  padding: 4rem;
+}
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.hero__content > .hero__title {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #333;
+}
+.hero__content > .hero__title .highlight {
+  color: #4caf50;
+}
+.hero__content > .hero__description {
+  font-size: 1.2rem;
+  color: #666;
+}
+.hero__content > .hero__search {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.hero__content > .hero__search .hero__input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.hero__content > .hero__search .btn--primary {
+  padding: 0.75rem 1.5rem;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.hero__content > .hero__search .btn--primary:hover {
+  background-color: #45a049;
+}
+.hero__content > .hero__partnership-title {
+  font-size: 1rem;
+  color: #888;
+  font-weight: 600;
+}
+.hero__content > .hero__partnerships {
+  display: flex;
+  gap: 1rem;
+}
+.hero__content > .hero__partnerships img {
+  height: 30px;
+}
+.hero__image {
+  position: relative;
+}
+.hero__image img {
+  width: 100%;
+  border-radius: 8px;
+}
+.hero__image-stats {
+  position: absolute;
+  bottom: -2rem;
+  right: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 1rem;
+}
+.hero__image-stats .stat {
+  text-align: center;
+}
+.hero__image-stats .stat__value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+.hero__image-stats .stat__label {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3MvX2Jhc2Uuc2NzcyIsInN0eWxlLmNvbXAuY3NzIiwiLi4vc2Fzcy9fbGF5b3V0LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBYUE7OztFQUdJLFNBQUE7RUFDQSxVQUFBO0VBQ0Esc0JBQUE7QUNaSjs7QURnQkE7RUFDSSxnQkFBQTtBQ2JKOztBRGdCQTtFQUNJLGtDQWxCVztFQW1CWCxXQXRCYztFQXVCZCxnQkFBQTtFQUNBLGdCQUFBO0VBQ0EseUJBMUJlO0FDYW5COztBRGlCQTtFQUNJLFVBQUE7RUFDQSxpQkFBQTtFQUNBLGNBQUE7QUNkSjs7QUN4QkE7RUFDSSxhQUFBO0VBQ0EsOEJBQUE7RUFDQSxTQUFBO0VBQ0EsbUJBQUE7RUFDQSxhQUFBO0FEMkJKO0FDekJJO0VBQ0ksYUFBQTtFQUNBLHNCQUFBO0VBQ0EsV0FBQTtBRDJCUjtBQ3pCUTtFQUNJLGVBQUE7RUFDQSxpQkFBQTtFQUNBLGdCQUFBO0VBQ0EsV0FBQTtBRDJCWjtBQ3pCWTtFQUNJLGNBQUE7QUQyQmhCO0FDdkJRO0VBQ0ksaUJBQUE7RUFDQSxXQUFBO0FEeUJaO0FDdEJRO0VBQ0ksYUFBQTtFQUNBLFNBQUE7RUFDQSxnQkFBQTtBRHdCWjtBQ3RCWTtFQUNJLE9BQUE7RUFDQSxnQkFBQTtFQUNBLHNCQUFBO0VBQ0Esa0JBQUE7RUFDQSxlQUFBO0FEd0JoQjtBQ3JCWTtFQUNJLHVCQUFBO0VBQ0EseUJBQUE7RUFDQSxXQUFBO0VBQ0EsWUFBQTtFQUNBLGtCQUFBO0VBQ0EsZUFBQTtFQUNBLGVBQUE7QUR1QmhCO0FDckJnQjtFQUNJLHlCQUFBO0FEdUJwQjtBQ2xCUTtFQUNJLGVBQUE7RUFDQSxXQUFBO0VBQ0EsZ0JBQUE7QURvQlo7QUNqQlE7RUFDSSxhQUFBO0VBQ0EsU0FBQTtBRG1CWjtBQ2pCWTtFQUNJLFlBQUE7QURtQmhCO0FDZEk7RUFDSSxrQkFBQTtBRGdCUjtBQ2RRO0VBQ0ksV0FBQTtFQUNBLGtCQUFBO0FEZ0JaO0FDYlE7RUFDSSxrQkFBQTtFQUNBLGFBQUE7RUFDQSxXQUFBO0VBQ0Esb0NBQUE7RUFDQSxhQUFBO0VBQ0Esa0JBQUE7RUFDQSx3Q0FBQTtFQUVBLGFBQUE7RUFDQSxTQUFBO0FEY1o7QUNaWTtFQUNJLGtCQUFBO0FEY2hCO0FDWmdCO0VBQ0ksaUJBQUE7RUFDQSxpQkFBQTtFQUNBLFdBQUE7QURjcEI7QUNYZ0I7RUFDSSxpQkFBQTtFQUNBLFdBQUE7QURhcEIiLCJmaWxlIjoic3R5bGUucHJlZml4LmNzcyJ9 */
